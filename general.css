@@ -5,7 +5,7 @@ MEDIUM:
 DARK: #211f1e;
 
 FONT SIZE:
-1.2, 2.4rem
+1.2, 2.2, 2.4
 
 MARGIN:
 2.8rem (btn)
@@ -32,4 +32,8 @@ html {
 body {
   font-family: "B612 Mono", monospace;
   line-height: 1;
+}
+
+.yesseva-font {
+  font-family: "Yeseva One", cursive;
 }
