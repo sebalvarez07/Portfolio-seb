@@ -1,0 +1,35 @@
+/* COLORS:
+
+LIGHT: #eae1d4
+MEDIUM:
+DARK: #211f1e;
+
+FONT SIZE:
+1.2, 2.4rem
+
+MARGIN:
+2.8rem (btn)
+
+BORDER RADIUS:
+8px
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "B612 Mono", monospace;
+  line-height: 1;
+}
