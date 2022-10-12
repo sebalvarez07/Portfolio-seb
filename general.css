@@ -1,7 +1,7 @@
 /* COLORS:
 
 LIGHT: #eae1d4
-MEDIUM:
+MEDIUM:#6f6b65 #969088
 DARK: #211f1e;
 
 FONT SIZE:
@@ -36,4 +36,20 @@ body {
 
 .yesseva-font {
   font-family: "Yeseva One", cursive;
+  font-size: 8rem;
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.pages-text-layout {
+  color: #969088;
+  letter-spacing: 10px;
+
+  transform: rotate(270deg);
 }
