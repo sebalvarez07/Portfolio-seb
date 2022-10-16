@@ -1,10 +1,9 @@
-/*********** SECTION NAV ****************/
+/* ********** SECTION NAV *************** */
 .nav_container {
   display: flex;
   gap: 27.5rem;
   align-items: center;
   justify-content: space-between;
-  background-color: #211f1e;
   height: 8rem;
 }
 
@@ -21,13 +20,13 @@
 
 .nav_link {
   font-size: 2.2rem;
-  color: #969088;
-  text-decoration: none;
+  color: var(--fc-primary);
   padding: 1rem;
 }
 
 .nav_link:hover {
-  color: #eae1d4;
+  text-decoration: none;
+  color: var(--color-accent);
 }
 
 .nav_links {
@@ -39,27 +38,35 @@
   margin: 2.8rem;
 }
 
-.nav_light-icon {
-  color: #969088;
-  height: 4.8rem;
-  width: 4.8rem;
+.nav-icon {
+  color: var(--fc-primary);
+  height: 4rem;
+  width: 4rem;
 }
 
-.nav_light-icon:hover {
-  color: #eae1d4;
+.nav-icon:hover {
+  color: var(--color-accent);
 }
 
-/*********** SECTION HERO ****************/
+.sticky .nav_container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(150, 144, 136, 0.95);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+/* ********** SECTION HERO *************** */
 
 .hero_container {
   display: grid;
   align-content: center;
   justify-content: center;
-  color: #211f1e;
   text-align: center;
 
-  background-image: url("/src/hero-img.png");
-  box-shadow: inset 0 0 0 2000px rgba(33, 31, 30, 0.8);
   background-size: cover;
   height: 90vh;
   width: 100vw;
@@ -67,6 +74,8 @@
 }
 
 .hero_bubble {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  color: var(--color-secondary);
   position: absolute;
   left: 22%;
   top: 22%;
@@ -74,10 +83,10 @@
 
 .hero_welcome {
   display: inline;
-  background-color: #969088;
+  background-color: var(--color-tertiary);
   padding: 2rem;
   font-size: 2.2rem;
-  border: solid 2px #211f1e;
+  border: solid 2px var(--color-secondary);
   border-radius: 8px;
   position: relative;
 }
@@ -86,8 +95,8 @@
   display: block;
   padding: 2rem;
   border-radius: 4px;
-  background-color: #969088;
-  border: solid 2px #211f1e;
+  background-color: var(--color-tertiary);
+  border: solid 2px var(--color-secondary);
 
   position: absolute;
   left: 60%;
@@ -96,22 +105,18 @@
 }
 
 .hero_header {
-  color: #969088;
+  color: inherit;
   font-weight: 400;
   width: 50rem;
   margin-bottom: 4rem;
 }
 
 .hero_name {
-  color: #969088;
+  color: var(--color-accent);
   font-size: 2.4rem;
 }
 
-/*********** SECTION ABOUT ****************/
-.section_about {
-  color: #969088;
-  background-color: #211f1e;
-}
+/* ********** SECTION ABOUT *************** */
 
 .about_description {
   text-align: center;
@@ -120,14 +125,9 @@
   line-height: 2;
 }
 
-/*********** SECTION WORK ****************/
+/* ********** SECTION WORK ***************  */
 .section_work {
-  background-color: #44413d;
-  color: #969088;
-}
-
-.work-heading {
-  color: inherit;
+  background-color: var(--color-secondary);
 }
 
 .work_portfolio {
@@ -144,15 +144,17 @@
 }
 
 .portfolio_container-box {
-  background-color: #211f1e;
+  background-color: var(--color-primary);
   width: 75rem;
   height: 55rem;
   border-radius: 8px;
   position: relative;
+
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio_git-icon {
-  color: #969088;
+  color: var(--color-tertiary);
   position: absolute;
   right: 2%;
   top: 2%;
@@ -168,16 +170,17 @@
   top: 20%;
   left: 50%;
   transform: translate(-50%, 0);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio_git-icon:hover {
-  color: #6f6b65;
+  color: var(--color-accent);
 }
 
 .portfolio_title {
   display: inline-block;
-  color: #211f1e;
-  background-color: #969088;
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
   padding: 1rem 2rem;
   border-radius: 8px;
   font-size: 2.4rem;
@@ -194,19 +197,20 @@
 }
 
 .dot {
-  background-color: #969088;
+  background-color: var(--color-primary);
   width: 1rem;
   height: 1rem;
   border-radius: 100px;
 }
 
 .active-dot {
-  background-color: #211f1e;
+  background-color: var(--color-tertiary);
 }
 
 .portfolio_btn {
-  background-color: #211f1e;
-  color: #969088;
+  background-color: var(--color-tertiary);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  color: var(--color-secondary);
   font-size: 3.6rem;
   cursor: pointer;
 
@@ -216,11 +220,12 @@
   border-radius: 100px;
 }
 
-/*********** SECTION CONTACT ****************/
-.section_contact {
-  background-color: #211f1e;
+.portfolio_btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
 }
 
+/* ********** SECTION CONTACT *************** */
 .about_content-container {
   display: flex;
   flex-direction: column;
@@ -229,8 +234,9 @@
 
 .contact_titles {
   display: inline-block;
-  color: #211f1e;
-  background-color: #969088;
+  color: var(--color-primary);
+  background-color: var(--color-tertiary);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
   padding: 1rem 2rem;
   border-radius: 8px;
   font-size: 3rem;
@@ -248,33 +254,31 @@
 }
 
 .contact-icons-sayhi {
-  background-color: #969088;
+  background-color: var(--color-tertiary);
   border-radius: 100px;
   padding: 1rem;
 
-  color: #211f1e;
+  color: var(--color-primary);
   height: 5rem;
   width: 5rem;
   text-decoration: none;
 }
 
 .contact-icons-sayhi:hover {
-  background-color: #44413d;
-  color: #969088;
+  background-color: var(--color-accent);
 }
 
 .contact-icons-findme {
-  color: #969088;
-  height: 8rem;
-  width: 8rem;
-  text-decoration: none;
+  color: var(--color-tertiary);
+  height: 7rem;
+  width: 7rem;
 }
 
 .contact-icons-findme:hover {
-  color: #44413d;
+  color: var(--color-accent);
 }
 
-/*********** SECTION FOOTER ****************/
+/* ********** SECTION FOOTER *************** */
 .section_footer {
   display: flex;
   align-items: center;

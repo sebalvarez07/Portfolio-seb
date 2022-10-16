@@ -27,10 +27,20 @@ BORDER RADIUS:
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-body {
-  font-family: "B612 Mono", monospace;
+.body {
+  --ff: "B612 Mono", monospace;
+
+  --color-primary: #eae1d4;
+  --color-secondary: #969088;
+  --color-tertiary: #211f1e;
+  --color-accent: #803b07;
+
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+  font-family: var(--ff);
   line-height: 1;
 }
 
@@ -48,8 +58,6 @@ body {
 }
 
 .pages-text-layout {
-  color: #969088;
   letter-spacing: 10px;
-
   transform: rotate(270deg);
 }
