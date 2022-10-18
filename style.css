@@ -4,7 +4,16 @@
   gap: 27.5rem;
   align-items: center;
   justify-content: space-between;
+
+  background-color: var(--color-primary);
   height: 8rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
 }
 
 .nav_list {
@@ -26,7 +35,7 @@
 
 .nav_link:hover {
   text-decoration: none;
-  color: var(--color-accent);
+  transition: 0.15s;
 }
 
 .nav_links {
@@ -39,22 +48,18 @@
 }
 
 .nav-icon {
-  color: var(--fc-primary);
-  height: 4rem;
-  width: 4rem;
-}
-
-.nav-icon:hover {
-  color: var(--color-accent);
+  color: var(--color-tertiary);
+  height: 3.5rem;
+  width: 3.5rem;
 }
 
 .sticky .nav_container {
+  margin-left: 0;
   position: fixed;
-  top: 0;
-  bottom: 0;
   width: 100%;
   height: 6rem;
-  background-color: rgba(150, 144, 136, 0.95);
+  background-color: rgba(45, 42, 40, 0.95);
+  color: #eae1d4;
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
@@ -67,6 +72,7 @@
   justify-content: center;
   text-align: center;
 
+  background-image: url(/src/light-background.jpg);
   background-size: cover;
   height: 90vh;
   width: 100vw;
@@ -74,29 +80,28 @@
 }
 
 .hero_bubble {
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-  color: var(--color-secondary);
+  color: var(--color-welcome-text);
   position: absolute;
   left: 22%;
   top: 22%;
 }
 
 .hero_welcome {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
   display: inline;
-  background-color: var(--color-tertiary);
+  background-color: var(--color-welcome);
   padding: 2rem;
   font-size: 2.2rem;
-  border: solid 2px var(--color-secondary);
   border-radius: 8px;
   position: relative;
 }
 
 .hero_welcome-trianlge {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
   display: block;
   padding: 2rem;
   border-radius: 4px;
-  background-color: var(--color-tertiary);
-  border: solid 2px var(--color-secondary);
+  background-color: var(--color-welcome);
 
   position: absolute;
   left: 60%;
@@ -105,14 +110,14 @@
 }
 
 .hero_header {
-  color: inherit;
+  color: var(--color-tertiary);
   font-weight: 400;
   width: 50rem;
   margin-bottom: 4rem;
 }
 
 .hero_name {
-  color: var(--color-accent);
+  color: var(--color-tertiary);
   font-size: 2.4rem;
 }
 
@@ -174,7 +179,8 @@
 }
 
 .portfolio_git-icon:hover {
-  color: var(--color-accent);
+  transition: 0.15s;
+  color: var(--color-secondary);
 }
 
 .portfolio_title {
@@ -201,16 +207,18 @@
   width: 1rem;
   height: 1rem;
   border-radius: 100px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 .active-dot {
   background-color: var(--color-tertiary);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio_btn {
-  background-color: var(--color-tertiary);
+  background-color: var(--color-primary);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-  color: var(--color-secondary);
+  color: var(--color-tertiary);
   font-size: 3.6rem;
   cursor: pointer;
 
@@ -221,8 +229,8 @@
 }
 
 .portfolio_btn:hover {
-  background-color: var(--color-accent);
-  color: var(--color-primary);
+  color: var(--color-secondary);
+  transition: 0.15s;
 }
 
 /* ********** SECTION CONTACT *************** */
@@ -265,7 +273,8 @@
 }
 
 .contact-icons-sayhi:hover {
-  background-color: var(--color-accent);
+  background-color: var(--color-secondary);
+  transition: 0.15s;
 }
 
 .contact-icons-findme {
@@ -275,7 +284,8 @@
 }
 
 .contact-icons-findme:hover {
-  color: var(--color-accent);
+  color: var(--color-secondary);
+  transition: 0.15s;
 }
 
 /* ********** SECTION FOOTER *************** */
@@ -283,12 +293,12 @@
   display: flex;
   align-items: center;
   height: 6rem;
-  background-color: #969088;
+  background-color: var(--color-secondary);
 }
 
 .copyright {
   font-size: 1.6rem;
-  color: #211f1e;
+  color: var(--color-tertiary);
   margin-left: auto;
   margin-right: 2rem;
 }

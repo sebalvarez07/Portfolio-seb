@@ -1,20 +1,3 @@
-/* COLORS:
-
-LIGHT: #eae1d4
-MEDIUM:#6f6b65 #969088
-DARK: #211f1e;
-
-FONT SIZE:
-1.2, 2.2, 2.4
-
-MARGIN:
-2.8rem (btn)
-
-BORDER RADIUS:
-8px
-
-*/
-
 * {
   margin: 0;
   padding: 0;
@@ -34,14 +17,24 @@ html {
   --ff: "B612 Mono", monospace;
 
   --color-primary: #eae1d4;
-  --color-secondary: #969088;
-  --color-tertiary: #211f1e;
-  --color-accent: #803b07;
+  --color-secondary: #7b736e;
+  --color-tertiary: #393533;
+  --color-logo: #424242;
+  --color-welcome: #7b736e;
+  --color-welcome-text: #eae1d4;
 
   background-color: var(--color-primary);
   color: var(--color-tertiary);
   font-family: var(--ff);
   line-height: 1;
+}
+
+.dark.body {
+  --color-primary: #151414;
+  --color-secondary: #413d3a;
+  --color-tertiary: #c7c1b8;
+  --color-welcome: #151414;
+  --color-welcome-text: #eae1d4;
 }
 
 .yesseva-font {
