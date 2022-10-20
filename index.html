@@ -37,136 +37,175 @@
   </head>
   <body class="body">
     <header class="header">
-      <nav class="nav_container">
-          <img class="logo" id="logo" alt="Natalia Alvarez logo" src="/src/logo.png"/>
+      <nav class="nav_container nav">
+        <img
+          class="logo"
+          id="logo"
+          alt="Natalia Alvarez logo"
+          src="/src/logo.png"
+        />
         <ul class="nav_list">
           <li class="nav_links"><a class="nav_link" href="#">//home</a></li>
-          <li class="nav_links"><a class="nav_link" href="#about">//about</a></li>
+          <li class="nav_links">
+            <a class="nav_link" href="#about">//about</a>
+          </li>
           <li class="nav_links"><a class="nav_link" href="#work">//work</a></li>
-          <li class="nav_links"><a class="nav_link" href="#contact">//contact</a></li>
+          <li class="nav_links">
+            <a class="nav_link" href="#contact">//contact</a>
+          </li>
         </ul>
         <button class="nav_btn">
-          <ion-icon class="nav-icon" id="nav-icon nav-icon-light" aria-label="togle button" name="contrast-outline"></ion-icon>
+          <ion-icon
+            class="nav-icon"
+            id="nav-icon nav-icon-light"
+            aria-label="togle button"
+            name="contrast-outline"
+          ></ion-icon>
         </button>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main>
-    <section class="section_hero">
-      <div class="hero_container ">
-        <div class="hero_bubble">
-          <span class="hero_welcome-trianlge"></span>
-          <p class="hero_welcome">Welcome</p>
+    <main>
+      <section class="section_hero">
+        <div class="hero_container">
+          <div class="hero_bubble">
+            <span class="hero_welcome-trianlge"></span>
+            <p class="hero_welcome">Welcome</p>
+          </div>
+          <h1 class="hero_header yesseva-font">Front-End Developer</h1>
+          <p class="hero_name">//Natalia Alvarez</p>
         </div>
-        <h1 class="hero_header yesseva-font">Front-End Developer</h1>
-        <p class="hero_name">//Natalia Alvarez</p>
-      </div>
-    </section>
+      </section>
 
-    <section class="section_about" id="about">
-      <div class="section-container">
-        <h1 class="about_header yesseva-font pages-text-layout">//About</h1>
-        <p class="about_description">
-          Hi there! I am a former personal trainer who was introduced to web development by my brother. As someone who loves creativity and problem solving it has quickly become my passion. As a woman of color in this industry it is hard to find a place. Therefore my goal with the asthetic of my website was to blur the line between femininity and web development. I am ecxited to continue to grow and learn in this industry.
-        </p>
-      </div>
-    </section>
+      <section class="section_about" id="about">
+        <div class="section-container">
+          <h1 class="about_header yesseva-font pages-text-layout">//About</h1>
+          <p class="about_description">
+            Hi there! I am a former personal trainer who was introduced to web
+            development by my brother. As someone who loves creativity and
+            problem solving it has quickly become my passion. As a woman of
+            color in this industry it is hard to find a place. Therefore my goal
+            with the asthetic of my website was to blur the line between
+            femininity and web development. I am ecxited to continue to grow and
+            learn in this industry.
+          </p>
+        </div>
+      </section>
 
-    <section class="section_work" id="work">
-      <div class="section-container">
-        <h1 class="work-heading yesseva-font pages-text-layout">//Work</h1>
-        <div class="work_portfolio">
-          <button class="portfolio_btn"><</button>
+      <section class="section_work section-container" id="work">
+        <div class="section__title section__title--testimonials">
+          <h1 class="work-heading yesseva-font pages-text-layout">//Work</h1>
+        </div>
 
-          <div class="portfolio_container">
-          
-            <div class="portfolio_container-box slide slide-1">
-              <a href="https://github.com/Natalia-Alvarez-git/OMNIFOOD">
-                <ion-icon class="portfolio_git-icon" name="logo-github"></ion-icon>
-              </a>
-              <img class="portfolio_img" src="src/slider/omnifood.png">
-              <p class="portfolio_title">omnifood</p>
+        <div class="slider">
+          <div class="slide slide--1">
+            <a href="https://github.com/Natalia-Alvarez-git/OMNIFOOD">
+              <ion-icon
+                class="portfolio_git-icon"
+                name="logo-github"
+              ></ion-icon>
+            </a>
+            <img class="portfolio_img" src="src/slider/omnifood.png" />
+            <p class="portfolio_title">omnifood</p>
+          </div>
+
+          <div class="slide slide--2">
+            <a href="https://github.com/Natalia-Alvarez-git/Mapty">
+              <ion-icon
+                class="portfolio_git-icon"
+                name="logo-github"
+              ></ion-icon>
+            </a>
+            <img class="portfolio_img" src="src/slider/mapty.png" />
+            <p class="portfolio_title">mapty</p>
+          </div>
+
+          <div class="slide slide--3">
+            <a href="https://github.com/Natalia-Alvarez-git/Bankist-Startup">
+              <ion-icon
+                class="portfolio_git-icon"
+                name="logo-github"
+              ></ion-icon>
+            </a>
+            <img class="portfolio_img" src="src/slider/bankist-startup.png" />
+            <p class="portfolio_title">bankist startup</p>
+          </div>
+
+          <div class="slide slide--4">
+            <a href="https://github.com/Natalia-Alvarez-git/Bankist-Account">
+              <ion-icon
+                class="portfolio_git-icon"
+                name="logo-github"
+              ></ion-icon>
+            </a>
+            <img class="portfolio_img" src="src/slider/bankist-acc.png" />
+            <p class="portfolio_title">bankist account</p>
+          </div>
+
+          <div class="slide slide--5">
+            <a href="https://github.com/Natalia-Alvarez-git/Pig-game">
+              <ion-icon
+                class="portfolio_git-icon"
+                name="logo-github"
+              ></ion-icon>
+            </a>
+            <img class="portfolio_img" src="src/slider/pig-game.png" />
+            <p class="portfolio_title">pig game</p>
+          </div>
+
+          <button class="slider__btn slider__btn--left"><</button>
+          <button class="slider__btn slider__btn--right">/></button>
+          <div class="dots"></div>
+        </div>
+      </section>
+
+      <section class="section_contact" id="contact">
+        <div class="section-container">
+          <h1 class="yesseva-font pages-text-layout">//Contact</h1>
+          <div class="about_content-container">
+            <div class="contact-title-container">
+              <p class="contact_titles">say hi!</p>
+              <div class="titles_icons">
+                <a href="mailto:03nataliaalvarez07@gmail.com">
+                  <ion-icon
+                    class="contact-icons-sayhi"
+                    name="at-outline"
+                  ></ion-icon>
+                </a>
+                <a href="tel:779-365-1722">
+                  <ion-icon
+                    class="contact-icons-sayhi"
+                    name="chatbubble-outline"
+                  ></ion-icon>
+                </a>
+              </div>
             </div>
-    
-            <div class="portfolio_container-box slide slide-2">
-              <a href="https://github.com/Natalia-Alvarez-git/Mapty">
-                <ion-icon class="portfolio_git-icon" name="logo-github"></ion-icon>
-              </a>
-              <img class="portfolio_img" src="src/slider/mapty.png">
-              <p class="portfolio_title">mapty</p>
+            <div class="contact-title-container">
+              <p class="contact_titles">also find me on</p>
+              <div class="titles_icons">
+                <a href="https://github.com/Natalia-Alvarez-git">
+                  <ion-icon
+                    class="contact-icons-findme"
+                    name="logo-github"
+                  ></ion-icon>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/natalia-alvarez-30b224230/"
+                >
+                  <ion-icon
+                    class="contact-icons-findme"
+                    name="logo-linkedin"
+                  ></ion-icon>
+                </a>
+              </div>
             </div>
-
-            <div class="portfolio_container-box slide slide-3">
-              <a href="https://github.com/Natalia-Alvarez-git/Bankist-Startup">
-                <ion-icon class="portfolio_git-icon" name="logo-github"></ion-icon>
-              </a>
-              <img class="portfolio_img" src="src/slider/bankist-startup.png">
-              <p class="portfolio_title">bankist startup</start-up></p>
-            </div>
-
-            <div class="portfolio_container-box slide slide-4">
-              <a href="https://github.com/Natalia-Alvarez-git/Bankist-Account">
-                <ion-icon class="portfolio_git-icon" name="logo-github"></ion-icon>
-              </a>
-              <img class="portfolio_img" src="src/slider/bankist-acc.png">
-              <p class="portfolio_title">bankist account</p>
-            </div>
-
-            <div class="portfolio_container-box slide slide-5">
-              <a href="https://github.com/Natalia-Alvarez-git/Pig-game">
-                <ion-icon class="portfolio_git-icon" name="logo-github"></ion-icon>
-              </a>
-              <img class="portfolio_img" src="src/slider/pig-game.png">
-              <p class="portfolio_title">pig game</p>
-            </div>
-          
-         <div class="pagination">
-            <a href="#"><div class="dot"></div></a>
-            <a href="#"><div class="dot active-dot"></div></a>
-            <a href="#"><div class="dot"></div></a>
-            <a href="#"><div class="dot"></div></a>
-            <a href="#"><div class="dot"></div></a>
           </div>
         </div>
-        <button class="portfolio_btn">/></button>
-      </div>
-    </section>
-
-    <section class="section_contact" id="contact">
-      <div class="section-container">
-        <h1 class="yesseva-font pages-text-layout">//Contact</h1>
-        <div class="about_content-container">
-        <div class="contact-title-container">
-          <p class="contact_titles">say hi!</p>
-          <div class="titles_icons">
-            <a href="mailto:03nataliaalvarez07@gmail.com">
-              <ion-icon class="contact-icons-sayhi" name="at-outline"></ion-icon>
-            </a>
-            <a  href="tel:779-365-1722">
-              <ion-icon class="contact-icons-sayhi" name="chatbubble-outline"></ion-icon>
-            </a>
-          </div>
-        </div>
-        <div class="contact-title-container">
-          <p class="contact_titles">also find me on</p>
-          <div class="titles_icons">
-            <a href="https://github.com/Natalia-Alvarez-git">
-              <ion-icon class="contact-icons-findme" name="logo-github"></ion-icon>
-            </a>
-            <a href="https://www.linkedin.com/in/natalia-alvarez-30b224230/">
-              <ion-icon class="contact-icons-findme" name="logo-linkedin"></ion-icon>
-            </a>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
     <footer class="section_footer">
-      <p class="copyright">
-        Copyright&copy; <span class="year">2028</span>
-      </p>
+      <p class="copyright">Copyright&copy; <span class="year">2028</span></p>
     </footer>
   </body>
 </html>

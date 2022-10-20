@@ -54,7 +54,7 @@
 }
 
 .sticky .nav_container {
-  margin-left: 0;
+  padding-left: 0;
   position: fixed;
   width: 100%;
   height: 6rem;
@@ -135,27 +135,94 @@
   background-color: var(--color-secondary);
 }
 
-.work_portfolio {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+/* SLIDER */
+.slider {
+  position: relative;
+  max-width: 100rem;
+  height: 50rem;
+  margin: 0 auto;
+  margin-left: 0;
+
+  /* IN THE END */
+  overflow: hidden;
 }
 
-.portfolio_container {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  align-items: center;
-}
-
-.portfolio_container-box {
-  background-color: var(--color-primary);
+.slide {
+  /* position: absolute; */
+  position: relative;
+  top: 0;
   width: 75rem;
   height: 55rem;
+  background-color: var(--color-primary);
   border-radius: 8px;
-  position: relative;
-
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  z-index: 10;
+
+  border: none;
+  background: rgb(123, 115, 110, 0.7);
+  box-shadow: 0 0.3rem 1.4rem rgba(0, 0, 0, 0.4);
+  font-family: inherit;
+  color: var(--color-tertiary);
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.slider__btn:hover {
+  color: var(--color-secondary);
+}
+
+.slider__btn--left {
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 5%;
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dot {
+  border: none;
+  background-color: var(--color-secondary);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  z-index: 10;
+
+  box-shadow: 0 0.3rem 1.4rem rgba(0, 0, 0, 0.4);
+}
+
+.dot:last-child {
+  margin: 0;
+}
+
+.active-dot {
+  /* background-color: #fff; */
+  background-color: var(--color-tertiary);
+  opacity: 1;
 }
 
 .portfolio_git-icon {
@@ -167,6 +234,11 @@
   height: 5rem;
 }
 
+.portfolio_git-icon:hover {
+  transition: 0.15s;
+  color: var(--color-secondary);
+}
+
 .portfolio_img {
   height: 30rem;
   border-radius: 8px;
@@ -176,11 +248,6 @@
   left: 50%;
   transform: translate(-50%, 0);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-}
-
-.portfolio_git-icon:hover {
-  transition: 0.15s;
-  color: var(--color-secondary);
 }
 
 .portfolio_title {
@@ -195,42 +262,6 @@
   bottom: 10%;
   left: 50%;
   transform: translate(-50%, 0);
-}
-
-.pagination {
-  display: flex;
-  gap: 2rem;
-}
-
-.dot {
-  background-color: var(--color-primary);
-  width: 1rem;
-  height: 1rem;
-  border-radius: 100px;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-}
-
-.active-dot {
-  background-color: var(--color-tertiary);
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-}
-
-.portfolio_btn {
-  background-color: var(--color-primary);
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-  color: var(--color-tertiary);
-  font-size: 3.6rem;
-  cursor: pointer;
-
-  text-align: center;
-  width: 8rem;
-  height: 8rem;
-  border-radius: 100px;
-}
-
-.portfolio_btn:hover {
-  color: var(--color-secondary);
-  transition: 0.15s;
 }
 
 /* ********** SECTION CONTACT *************** */
