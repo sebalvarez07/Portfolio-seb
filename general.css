@@ -37,21 +37,29 @@ html {
   --color-welcome-text: #eae1d4;
 }
 
-.yesseva-font {
-  font-family: "Yeseva One", cursive;
-  font-size: 8rem;
-}
 
 .section-container {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
 
   height: 100vh;
   width: 100vw;
 }
 
-.pages-text-layout {
+.section__content{
+  flex: 1;
+  position: relative;
+}
+
+.section__title-container {
+  
+}
+
+.section__title{
+  display: block;
   letter-spacing: 10px;
+  transform-origin: 50% 50%;
   transform: rotate(270deg);
+  font-family: "Yeseva One", cursive;
+  font-size: 8rem;
 }

@@ -140,8 +140,9 @@ const slider = function () {
   const dotContainer = document.querySelector(".dots");
 
   const slider = document.querySelector(".slider");
-  slider.style.transform = "scale(0.4) translateX(-500px)";
-  slider.style.overflow = "visible";
+  // You don't need JS to add this. You can add it straight in the HTML
+  // slider.style.transform = "scale(0.4) translateX(-500px)";
+  // slider.style.overflow = "visible";
 
   let curSlide = 0;
   const maxSlide = slides.length;
